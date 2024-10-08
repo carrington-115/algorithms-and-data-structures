@@ -1,14 +1,22 @@
-
+// Online C compiler to run C program online
 #include <stdio.h>
+
+// linked list data type
+struct linked_list_elements
+{
+    int data;
+    int *pointer_address;
+};
+
+struct singly_linked_list_data_type
+{
+    struct linked_list_elements elements[20];
+};
 
 void creat_linked_list()
 {
-    struct linked_list_element
-    {
-        int data;
-        int *pointer_address;
-    };
-    struct linked_list_element data_element[10];
+
+    struct linked_list_elements data_element[10];
     for (int i = 0; i < 10; i++)
     {
         if (i != 9)
@@ -32,7 +40,12 @@ void creat_linked_list()
     printf("\n\nelement 2: %d", *data_element[0].pointer_address);
 }
 
-//
+// returnable linked list elements
+struct singly_linked_list_data_type singly_linked_list()
+{
+}
+
+//  insertion in linked list
 
 int main()
 {
